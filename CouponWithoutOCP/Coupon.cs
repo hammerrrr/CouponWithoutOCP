@@ -20,7 +20,14 @@ namespace CouponWithoutOCP
             {
                 net = originPrice - discNominal;
             }
+            else if (discNominal > 0 && discPercentage > 0)
+            {
+                net = originPrice - (discNominal - (100 - discPercentage) * originPrice / 100);
+            }
             return net;
+
         }
 
     }
+
+}
