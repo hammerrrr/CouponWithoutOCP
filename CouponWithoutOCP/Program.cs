@@ -6,6 +6,7 @@ namespace CouponWithoutOCP
     {
         static void Main(string[] args)  
         {
+            Console.WriteLine("halooo");
             Coupon coupon1 = new Coupon();
             coupon1.discNominal = 2000;
             Console.WriteLine(coupon1.priceNett(10000));
